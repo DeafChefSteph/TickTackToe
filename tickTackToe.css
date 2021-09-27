@@ -1,0 +1,23 @@
+#tickTackToeField{
+    background-color: brown;
+    width: 21rem;
+    height: 21rem;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    
+}
+.gameBoardDiv{
+    height: 6rem;
+    width: 6rem;
+    background-color: cyan;
+    line-height: 4rem;
+}
+.paraInDiv{
+    text-align: center;
+    
+}
