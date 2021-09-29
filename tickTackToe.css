@@ -1,5 +1,57 @@
+h1{
+    text-align: center;
+    color: #D7D9D8;
+}
+h2{
+    text-align: center;
+    color: #D7D9D8;
+}
+body{
+    background-color: #518C77;
+}
+
+#welcomeField{
+    width: 100%;
+    height: 30rem;
+    background-color: #593325;
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #D7D9D8;
+
+    padding: 1rem;
+}
+
+input{
+    height: 4rem;
+    width: 12rem;
+    text-align: center;
+    color: #593325;
+    font-size: 1.5rem;
+    background-color: #D7D9D8;
+}
+
+#sideBarOne, #sideBarTwo{
+    width: 16rem;
+    height: 21rem;
+    text-align: center;
+    background-color: #D7D9D8;
+    color: #593325;
+    caret-color: transparent;
+    padding: 3rem;
+    line-height: 3rem;
+}
+#main{
+    display: none;
+    width: 100%;
+    background-color: #593325;
+    font-size: 2rem;
+    caret-color: transparent;
+}
+
+
 #tickTackToeField{
-    background-color: brown;
+    background-color: #593325;
     width: 21rem;
     height: 21rem;
     margin: auto;
@@ -9,15 +61,44 @@
     gap: 0.5rem;
     justify-content: center;
     align-content: center;
-    
+
 }
 .gameBoardDiv{
     height: 6rem;
     width: 6rem;
-    background-color: cyan;
-    line-height: 4rem;
+    
+    line-height: 0rem;
+    cursor: pointer;
+    background-color: #D7D9D8;
+    color: #365949;
+    
+    
 }
 .paraInDiv{
     text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Sigmar One', cursive;
+    cursor: pointer;
     
+}
+
+
+#winMessage{
+    background-color: #593325;
+    color: #D7D9D8;
+    width: 80%;
+    height: 30rem;
+    display: none;
+    margin: auto;
+    text-align: center;
+    line-height: 8rem;
+    transition-delay: 2s;
+    font-size: 3rem;
+    caret-color: transparent;
+}
+#rematchButton{
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
 }

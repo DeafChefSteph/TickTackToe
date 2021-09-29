@@ -3,12 +3,77 @@
     <head>
         <link rel="stylesheet" href="tickTackToe.css">
         <script src="tickTackToe.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
         <title>TickTackToe</title>
     </head>
     <body>
         <h1>TickTackToe</h1>
-        <div id="tickTackToeField">
+        <div id="welcomeField">
+            <h2>Welcome to TickTackToe</h2>
+            <form action="javascript:void(0);" autocomplete="off">
+                <input type="text" id="player1" name="player1" placeholder="Player 1" onfocus="this.placeholder=''"  onblur="this.placeholder='Player 1'" required><br>
+                <p>Vs.</p>
+                <input type="text" id="player2" name="player2" placeholder="Player 2" onfocus="this.placeholder=''"  onblur="this.placeholder='Player 2'" required><br>
+                <br>
+                <input type="submit" value="Go" id="submitButton">
+            </form>
         </div>
+        <div id="main">
+            <div id="sideBarOne">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td id="playerOneName"></td>
+                    </tr>
+                    <tr>
+                        <td>Playstone:</td>
+                        <td id="playerOnePlaystone"></td>
+                    </tr>
+                    <tr>
+                        <td>Wins:</td>
+                        <td id="playerOneWins">0</td>
+                    </tr>
+                    <tr>
+                        <td>Loses:</td>
+                        <td id="playerOneLoses">0</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tickTackToeField"></div>
+
+            <div id="sideBarTwo">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td id="playerTwoName"></td>
+                    </tr>
+                    <tr>
+                        <td>Playstone:</td>
+                        <td id="playerTwoPlaystone"></td>
+                    </tr>
+                    <tr>
+                        <td>Wins:</td>
+                        <td id="playerTwoWins">0</td>
+                    </tr>
+                    <tr>
+                        <td>Loses:</td>
+                        <td id="playerTwoLoses">0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="winMessage">
+            <p id="winMessagePara"></p>
+            <button id="rematchButton">Rematch</button>
+        </div>
+       
+        
         
     </body>
 </html>
